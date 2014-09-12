@@ -4,9 +4,9 @@
 #exit 0
 set -x
 
-if [[ -d "$OPENSHIFT_DATA_DIR/tomcat" && ! -L "$OPENSHIFT_DATA_DIR/tomcat" ]]
+if [[ -d "${OPENSHIFT_DATA_DIR}tomcat" && ! -L "${OPENSHIFT_DATA_DIR}tomcat" ]]
 then
-    cd $OPENSHIFT_DATA_DIR/tomcat
+    cd ${OPENSHIFT_DATA_DIR}tomcat
     bin/shutdown.sh
 else
      exit 0

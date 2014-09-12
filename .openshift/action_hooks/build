@@ -5,7 +5,7 @@
 # could be python, php, ruby, etc.
 
 source ${OPENSHIFT_REPO_DIR}conf/app.conf
-cd $OPENSHIFT_DATA_DIR/tomcat
+cd ${OPENSHIFT_DATA_DIR}tomcat
 sed -ig 's/OPENSHIFT_INTERNAL_IP/'$OPENSHIFT_DIY_IP'/g' conf/server.xml
 # Download latest nexus
 rm -Rf webapps/*
