@@ -19,6 +19,7 @@ Use these quickstart commands to install nexus
 
     cd nexus
     git remote add nexus git://github.com/ajagnanan/openshift-nexus.git
+    git rm -r diy .openshift misc README.md
     git pull -s recursive -X theirs nexus master
     git push
 
