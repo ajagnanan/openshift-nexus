@@ -24,6 +24,6 @@ Use these quickstart commands to install nexus
 
 That's it, you can now checkout your nexus at:
 
-    http://nexus-$yournamespace.rhcloud.com/nexus
+    http://nexus-$yournamespace.rhcloud.com
 
 The default nexus user is admin/admin123
