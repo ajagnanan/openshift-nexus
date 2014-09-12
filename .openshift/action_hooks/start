@@ -10,6 +10,7 @@ then
     export PLEXUS_NEXUS_WORK=$OPENSHIFT_DATA_DIR
     export CATALINA_OPTS="$JAVA_OPTS -Djava.util.prefs.userRoot=${OPENSHIFT_DATA_DIR}prefs"
 
+    cd ${OPENSHIFT_DATA_DIR}tomcat
     bin/startup.sh
 else
      exit 0
