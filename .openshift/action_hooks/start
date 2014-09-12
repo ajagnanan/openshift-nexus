@@ -8,4 +8,7 @@ export PLEXUS_NEXUS_WORK=$OPENSHIFT_DATA_DIR
 export CATALINA_OPTS="$JAVA_OPTS -Djava.util.prefs.userRoot=$OPENSHIFT_DATA_DIR/prefs"
 cd $OPENSHIFT_DATA_DIR/tomcat
 sed -ig 's/OPENSHIFT_INTERNAL_IP/'$OPENSHIFT_DIY_IP'/g' conf/server.xml
+# Download latest nexus
+rm -Rf webapps/*
+wget http://www.sonatype.org/downloads/nexus-latest.war -O webapps/ROOT.war
 bin/startup.sh
