@@ -1,12 +1,13 @@
 Nexus on OpenShift
 ============================
 
-This git repository will help you get up and running quickly with nexus running on tomcat on OpenShift.
+This repository will help you install (Nexus)[http://www.sonatype.org/nexus/] on tomcat with Openshift. It is designed to download the
+latest war from the sonatype website. The nexus war url is configurable within the app.conf file.
 
 Create a DIY app on OpenShift
 ----------------------------
 
-Create an account at http://openshift.redhat.com/ , don't forget to create a namespace and install client tools as well.
+Create an account at http://openshift.redhat.com/, don't forget to create a namespace and install client tools as well.
 
 Create a DIY application
 
@@ -14,7 +15,7 @@ Create a DIY application
 
 Get Nexus running
 ----------------------------
-Grab this quickstart codes and make it working for you!
+Use these quickstart commands to install nexus
 
     cd nexus
     git remote add nexus git://github.com/ajagnanan/openshift-nexus.git
@@ -26,5 +27,3 @@ That's it, you can now checkout your nexus at:
     http://nexus-$yournamespace.rhcloud.com/nexus
 
 The default nexus user is admin/admin123
-
-Note: You can get the latest nexus code from github at https://github.com/sonatype/nexus-oss
