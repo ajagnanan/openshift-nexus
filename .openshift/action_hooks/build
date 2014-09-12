@@ -3,3 +3,8 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
+
+# Download the latest nexus version
+cd $OPENSHIFT_DATA_DIR/tomcat
+rm -Rf webapps/*
+wget http://www.sonatype.org/downloads/nexus-latest.war -O webapps/ROOT.war
