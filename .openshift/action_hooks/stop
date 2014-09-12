@@ -3,5 +3,11 @@
 #kill `ps -ef | grep testrubyserver.rb | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1
 #exit 0
 set -x
-cd $OPENSHIFT_DATA_DIR/tomcat
-bin/shutdown.sh
+
+if [[ -d "$OPENSHIFT_DATA_DIR/tomcat" && ! -L "$OPENSHIFT_DATA_DIR/tomcat" ]]
+then
+    cd $OPENSHIFT_DATA_DIR/tomcat
+    bin/shutdown.sh
+else
+     exit 0
+fi
