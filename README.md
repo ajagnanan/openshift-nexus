@@ -1,7 +1,7 @@
 Nexus on OpenShift
 ============================
 
-This repository will help you install [Nexus](http://www.sonatype.org/nexus) on tomcat with Openshift. It is designed to download the
+This repository will help you install [Nexus](http://www.sonatype.org/nexus) on Apache Tomcat using Openshift. It is designed to download the
 latest war from the sonatype website. The nexus war url is configurable within the app.conf file.
 
 Create a DIY app on OpenShift
