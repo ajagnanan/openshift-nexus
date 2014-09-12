@@ -21,6 +21,9 @@ Use these quickstart commands to install nexus
     git remote add nexus git://github.com/ajagnanan/openshift-nexus.git
     git rm -r diy .openshift misc README.md
     git pull -s recursive -X theirs nexus master
+
+Push nexus up to Openshift with
+
     git push
 
 That's it, you can now checkout your nexus at:
